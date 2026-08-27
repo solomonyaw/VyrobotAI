@@ -2287,7 +2287,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .why-item-sub {
-  font-size: 0.75rem;
+  font-size: 0.74rem;
   font-weight: 400;
   color: var(--text-muted);
   margin-top: 0.15rem;
