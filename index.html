@@ -1,0 +1,1294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VyRobot — AI-Powered Automated Trading & Prediction Markets</title>
+    <meta name="description" content="Explore VyRobot, an automated algorithmic trading platform focused on prediction-market opportunities. Review platform features, 180-day investment tiers, interactive calculator, and risk information." />
+    
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vyrobot.io?ref=C8C858AF" />
+    <meta property="og:title" content="VyRobot — AI-Powered Automated Trading" />
+    <meta property="og:description" content="Automated quantitative algorithms scanning prediction markets with 180-day structured investment cycles." />
+    <meta property="og:image" content="/vyrobotlogo.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Pure Strict CSS Stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    
+    <!-- Canvas Confetti Script -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+  </head>
+  <body class="cyber-grid">
+
+    <!-- Ambient Lighting Effects -->
+    <div class="ambient-glow glow-blue" style="top: 0; left: 20%; width: 500px; height: 500px;"></div>
+    <div class="ambient-glow glow-cyan" style="top: 30%; right: 10%; width: 600px; height: 600px;"></div>
+
+    <!-- ==========================================================================
+         1. NAVBAR
+         ========================================================================== -->
+    <header class="navbar" id="navbar">
+      <div class="container">
+        <div class="navbar-inner">
+          <!-- Logo -->
+          <a href="#" class="nav-logo">
+            <div style="width: 2.5rem; height: 2.5rem; border-radius: var(--radius-md); background: linear-gradient(135deg, #0052ff, #00f0ff); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+                <circle cx="8" cy="10" r="1" fill="#ffffff"></circle>
+                <circle cx="16" cy="10" r="1" fill="#ffffff"></circle>
+              </svg>
+            </div>
+            <div>
+              <div style="font-size: 1.25rem; font-weight: 900; letter-spacing: -0.02em; color: #ffffff; line-height: 1;">
+                Vy<span style="color: var(--cyan-accent);">Robot</span>
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 0.625rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em;">
+                Algorithmic Engine
+              </div>
+            </div>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="nav-links">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#how-it-works" class="nav-link">How It Works</a>
+            <a href="#plans" class="nav-link">180-Day Plans</a>
+            <a href="#calculator" class="nav-link">Calculator</a>
+            <a href="#technology" class="nav-link">Technology</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+          </nav>
+
+          <!-- Action Buttons -->
+          <div class="nav-actions">
+            <button type="button" class="btn btn-secondary btn-sm btn-copy-ref" title="Copy Referral Code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Ref: <strong>C8C858AF</strong></span>
+            </button>
+
+            <a href="https://vyrobot.io?ref=C8C858AF" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm cta-celebrate">
+              <span>Launch Platform</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+
+            <!-- Mobile Hamburger -->
+            <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Mobile Menu">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#plans">180-Day Investment Plans</a>
+        <a href="#calculator">Simulator & Calculator</a>
+        <a href="#technology">Technology Pipeline</a>
+        <a href="#faq">Frequently Asked Questions</a>
+        <div style="padding-top: 1rem;">
+          <a href="https://vyrobot.io?ref=C8C858AF" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+            Launch VyRobot (Ref: C8C858AF)
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         2. LIVE TICKER
+         ========================================================================== -->
+    <div class="ticker-bar">
+      <div class="ticker-wrapper" id="tickerWrapper">
+        <div class="ticker-item"><span class="ticker-symbol">BTC/USDT</span> <span class="ticker-price">$91,420.50</span> <span class="ticker-change pos">+2.4%</span></div>
+        <div class="ticker-item"><span class="ticker-symbol">ETH/USDT</span> <span class="ticker-price">$3,420.80</span> <span class="ticker-change pos">+3.1%</span></div>
+        <div class="ticker-item"><span class="ticker-symbol">SOL/USDC</span> <span class="ticker-price">$198.40</span> <span class="ticker-change pos">+5.2%</span></div>
+        <div class="ticker-item"><span class="ticker-symbol">POLY/USD</span> <span class="ticker-price">Probability Spread</span> <span class="ticker-change pos">+0.88%</span></div>
+        <div class="ticker-item"><span class="ticker-symbol">BNB/USDT</span> <span class="ticker-price">$645.10</span> <span class="ticker-change pos">+1.6%</span></div>
+        <div class="ticker-item"><span class="ticker-symbol">ARB/USDT</span> <span class="ticker-price">$1.12</span> <span class="ticker-change pos">+4.0%</span></div>
+        <div class="ticker-item"><span class="ticker-symbol">DELTA SCAN</span> <span class="ticker-price">24/7 Micro-Arbitrage</span> <span class="ticker-change pos">Active</span></div>
+        <!-- Duplicate for continuous marquee -->
+        <div class="ticker-item"><span class="ticker-symbol">BTC/USDT</span> <span class="ticker-price">$91,420.50</span> <span class="ticker-change pos">+2.4%</span></div>
+        <div class="ticker-item"><span class="ticker-symbol">ETH/USDT</span> <span class="ticker-price">$3,420.80</span> <span class="ticker-change pos">+3.1%</span></div>
+        <div class="ticker-item"><span class="ticker-symbol">SOL/USDC</span> <span class="ticker-price">$198.40</span> <span class="ticker-change pos">+5.2%</span></div>
+        <div class="ticker-item"><span class="ticker-symbol">POLY/USD</span> <span class="ticker-price">Probability Spread</span> <span class="ticker-change pos">+0.88%</span></div>
+        <div class="ticker-item"><span class="ticker-symbol">BNB/USDT</span> <span class="ticker-price">$645.10</span> <span class="ticker-change pos">+1.6%</span></div>
+        <div class="ticker-item"><span class="ticker-symbol">ARB/USDT</span> <span class="ticker-price">$1.12</span> <span class="ticker-change pos">+4.0%</span></div>
+        <div class="ticker-item"><span class="ticker-symbol">DELTA SCAN</span> <span class="ticker-price">24/7 Micro-Arbitrage</span> <span class="ticker-change pos">Active</span></div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         3. HERO SECTION
+         ========================================================================== -->
+    <section class="section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text -->
+          <div class="hero-content">
+            <div class="badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <span>Automated Prediction & Trading Platform</span>
+            </div>
+
+            <h1 class="hero-title">
+              Smart Prediction <br />
+              <span class="text-gradient">Algorithms</span> Built for Modern Traders
+            </h1>
+
+            <p class="hero-desc">
+              Explore VyRobot, an automated platform designed to execute algorithmic strategies across prediction markets and digital assets. Participate in structured <strong>180-day trading cycles</strong> starting from just $25.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="https://vyrobot.io?ref=C8C858AF" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg cta-celebrate">
+                <span>Start Trading with VyRobot</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+
+              <a href="#calculator" class="btn btn-secondary btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                  <line x1="8" y1="6" x2="16" y2="6"></line>
+                  <line x1="16" y1="14" x2="16" y2="18"></line>
+                  <path d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M8 18h.01M12 18h.01"></path>
+                </svg>
+                <span>Simulate Returns</span>
+              </a>
+            </div>
+
+            <!-- Stats Highlights -->
+            <div class="hero-stats">
+              <div>
+                <div class="hero-stat-val" style="color: var(--cyan-accent);">$25</div>
+                <div class="hero-stat-lbl">Starter Deposit</div>
+              </div>
+              <div>
+                <div class="hero-stat-val" style="color: #60a5fa;">180 Days</div>
+                <div class="hero-stat-lbl">Standard Cycle</div>
+              </div>
+              <div>
+                <div class="hero-stat-val" style="color: #34d399;">Up to 9.5%</div>
+                <div class="hero-stat-lbl">Reported Daily</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero UI Mock / Terminal -->
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <div class="terminal-dot dot-red"></div>
+                <div class="terminal-dot dot-yellow"></div>
+                <div class="terminal-dot dot-green"></div>
+              </div>
+              <div class="terminal-title">VYROBOT QUANT ROUTER v4.8</div>
+              <div style="font-family: var(--font-mono); font-size: 0.7rem; color: #34d399; display: flex; align-items: center; gap: 0.3rem;">
+                <span style="width: 6px; height: 6px; border-radius: 50%; background-color: #34d399; box-shadow: 0 0 6px #34d399;"></span>
+                ONLINE
+              </div>
+            </div>
+
+            <!-- Live Metrics Grid -->
+            <div class="terminal-metric-grid">
+              <div class="terminal-metric-box">
+                <div class="terminal-metric-label">TOTAL SCANNED TRADES</div>
+                <div class="terminal-metric-value" id="metricTrades">142,890</div>
+              </div>
+              <div class="terminal-metric-box">
+                <div class="terminal-metric-label">PREDICTION CONFIDENCE</div>
+                <div class="terminal-metric-value" style="color: var(--cyan-accent);" id="metricConfidence">98.8%</div>
+              </div>
+              <div class="terminal-metric-box">
+                <div class="terminal-metric-label">EXECUTION LATENCY</div>
+                <div class="terminal-metric-value" style="color: #60a5fa;" id="metricLatency">3.8ms</div>
+              </div>
+              <div class="terminal-metric-box">
+                <div class="terminal-metric-label">CURRENT DELTA SPREAD</div>
+                <div class="terminal-metric-value" style="color: #34d399;" id="metricDelta">+0.48%</div>
+              </div>
+            </div>
+
+            <!-- Live Log Window -->
+            <div class="terminal-logs" id="terminalLogs">
+              <div class="log-entry">
+                <span class="log-time">[12:45:01]</span>
+                <span class="log-tag">ARBITRAGE EXEC</span>
+                <span>BTC/USDT 5m Delta</span>
+                <span class="log-val pos">+1.42%</span>
+              </div>
+              <div class="log-entry">
+                <span class="log-time">[12:44:58]</span>
+                <span class="log-tag">PROBABILITY SPREAD</span>
+                <span>ETH/USD PolyPredict</span>
+                <span class="log-val pos">+0.88%</span>
+              </div>
+              <div class="log-entry">
+                <span class="log-time">[12:44:52]</span>
+                <span class="log-tag">QUANT SCAN</span>
+                <span>SOL/USDC Momentum</span>
+                <span class="log-val pos">+2.10%</span>
+              </div>
+            </div>
+
+            <!-- Card Bottom Trust Note -->
+            <div style="margin-top: 1rem; display: flex; align-items: center; justify-content: space-between; font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-dim);">
+              <span>Referral Partner: C8C858AF</span>
+              <span>Official Protocol: vyrobot.io</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. TRUST PILLARS
+         ========================================================================== -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="trust-grid">
+          
+          <div class="card-pillar">
+            <div class="pillar-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Prediction Market Ingestion</h3>
+            <p class="pillar-desc">
+              High-frequency multi-venue data streams continuously capture market sentiment, outcome probabilities, and order-book pricing discrepancies.
+            </p>
+          </div>
+
+          <div class="card-pillar">
+            <div class="pillar-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Quantitative Execution Core</h3>
+            <p class="pillar-desc">
+              Automated routing engines trigger millisecond trade entries and risk-controlled exits based on statistical probability deltas.
+            </p>
+          </div>
+
+          <div class="card-pillar">
+            <div class="pillar-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="pillar-title">180-Day Structured Cycles</h3>
+            <p class="pillar-desc">
+              Clear, transparent plan structures. Each package operates on a standard 180-day cycle with full performance visibility and renewal mechanisms.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. HOW IT WORKS (4 STEPS)
+         ========================================================================== -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            <span>Seamless Workflow</span>
+          </div>
+          <h2 class="section-title">How <span class="text-gradient">VyRobot</span> Operates</h2>
+          <p class="section-desc">
+            A step-by-step overview of how to join, select an automated tier, and track your algorithmic trading allocations.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          
+          <div class="step-card">
+            <div class="step-number">STEP 01</div>
+            <div class="step-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <line x1="20" y1="8" x2="20" y2="14"></line>
+                <line x1="23" y1="11" x2="17" y2="11"></line>
+              </svg>
+            </div>
+            <h3 class="step-title">Create & Register</h3>
+            <p class="step-desc">
+              Sign up through the official platform using referral code <strong>C8C858AF</strong> to create and secure your trading dashboard.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">STEP 02</div>
+            <div class="step-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
+                <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path>
+                <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path>
+              </svg>
+            </div>
+            <h3 class="step-title">Select 180-Day Tier</h3>
+            <p class="step-desc">
+              Choose between Starter ($25–$199), Growth ($200–$2,499), or Ultra ($2,500+) depending on your desired capital allocation.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">STEP 03</div>
+            <div class="step-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="step-title">Algorithmic Execution</h3>
+            <p class="step-desc">
+              VyRobot's automated quantitative engine scans prediction market outcome spreads and executes high-probability positions 24/7.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">STEP 04</div>
+            <div class="step-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="step-title">Monitor & Settle</h3>
+            <p class="step-desc">
+              Track real-time portfolio performance on your personal dashboard. Withdrawals or plan renewals occur per platform cycle guidelines.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. 180-DAY INVESTMENT PLANS
+         ========================================================================== -->
+    <section class="section" id="plans">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge badge-emerald">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Standard 180-Day Duration Cycle</span>
+          </div>
+          <h2 class="section-title">VyRobot <span class="text-gradient">Investment Tiers</span></h2>
+          <p class="section-desc">
+            Explore the official investment options. All tiers run on a 180-day cycle and require renewal afterward to continue automated allocations.
+          </p>
+        </div>
+
+        <div class="plans-grid">
+          
+          <!-- STARTER PLAN -->
+          <div class="plan-card">
+            <div>
+              <div class="plan-header">
+                <h3 class="plan-name">Starter Plan</h3>
+                <span class="badge badge-emerald" style="margin: 0;">Moderate Risk</span>
+              </div>
+              <p class="plan-tagline">Accessible entry into automated prediction markets and algorithmic trading.</p>
+
+              <div class="plan-box-range">
+                <div class="plan-range-label">DEPOSIT RANGE</div>
+                <div class="plan-range-val">$25 <span style="font-size: 1rem; color: var(--text-muted); font-weight: 400;">– $199</span></div>
+                
+                <div class="plan-daily-rate">
+                  <span style="font-size: 0.8125rem; color: var(--text-muted);">Daily Return:</span>
+                  <span class="plan-rate-badge">Around 5% to 7% daily</span>
+                </div>
+
+                <div class="plan-cycle-row">
+                  <span>Cycle Duration:</span>
+                  <span style="color: #ffffff; font-weight: 700;">180 Days</span>
+                </div>
+              </div>
+
+              <div class="plan-features-title">Tier Highlights</div>
+              <ul class="plan-features-list">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Accessible entry deposit from $25 to $199</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Reported daily return: Around 5% to 7%</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>180-Day duration cycle (renewal required afterward)</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Automated prediction-market strategy access</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="plan-notice-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Runs on a 180-day cycle and requires renewal afterward.</span>
+              </div>
+
+              <a href="https://vyrobot.io?ref=C8C858AF" target="_blank" rel="noopener noreferrer" class="btn btn-secondary cta-celebrate" style="width: 100%;">
+                <span>Invest in Starter</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- GROWTH PLAN (POPULAR) -->
+          <div class="plan-card featured">
+            <div class="plan-badge-popular">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <span>Most Popular Tier</span>
+            </div>
+
+            <div>
+              <div class="plan-header">
+                <h3 class="plan-name">Growth Plan</h3>
+                <span class="badge" style="margin: 0;">Balanced Risk</span>
+              </div>
+              <p class="plan-tagline">Enhanced capital allocation with optimized multi-vector algorithmic execution.</p>
+
+              <div class="plan-box-range">
+                <div class="plan-range-label">DEPOSIT RANGE</div>
+                <div class="plan-range-val">$200 <span style="font-size: 1rem; color: var(--text-muted); font-weight: 400;">– $2,499</span></div>
+                
+                <div class="plan-daily-rate">
+                  <span style="font-size: 0.8125rem; color: var(--text-muted);">Daily Return:</span>
+                  <span class="plan-rate-badge" style="background-color: rgba(0, 82, 255, 0.2); border-color: var(--cyan-accent);">Around 7% to 8% daily</span>
+                </div>
+
+                <div class="plan-cycle-row">
+                  <span>Cycle Duration:</span>
+                  <span style="color: #ffffff; font-weight: 700;">180 Days</span>
+                </div>
+              </div>
+
+              <div class="plan-features-title">Tier Highlights</div>
+              <ul class="plan-features-list">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Target capital allocation: $200 – $2,499</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Reported daily return: Around 7% to 8%</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>180-Day duration cycle (renewal required afterward)</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Multi-market prediction arbitrage & probability delta</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="plan-notice-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Runs on a 180-day cycle and requires renewal afterward.</span>
+              </div>
+
+              <a href="https://vyrobot.io?ref=C8C858AF" target="_blank" rel="noopener noreferrer" class="btn btn-primary cta-celebrate" style="width: 100%;">
+                <span>Invest in Growth Plan</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- ULTRA PLAN -->
+          <div class="plan-card">
+            <div>
+              <div class="plan-header">
+                <h3 class="plan-name">Ultra Plan</h3>
+                <span class="badge badge-indigo" style="margin: 0;">High Opportunity</span>
+              </div>
+              <p class="plan-tagline">Maximum algorithmic scale and top-tier prediction market capacity.</p>
+
+              <div class="plan-box-range">
+                <div class="plan-range-label">DEPOSIT RANGE</div>
+                <div class="plan-range-val">$2,500 <span style="font-size: 1rem; color: var(--text-muted); font-weight: 400;">and above</span></div>
+                
+                <div class="plan-daily-rate">
+                  <span style="font-size: 0.8125rem; color: var(--text-muted);">Daily Return:</span>
+                  <span class="plan-rate-badge" style="color: #a5b4fc; border-color: rgba(99, 102, 241, 0.4);">Up to 9.5% daily</span>
+                </div>
+
+                <div class="plan-cycle-row">
+                  <span>Cycle Duration:</span>
+                  <span style="color: #ffffff; font-weight: 700;">180 Days</span>
+                </div>
+              </div>
+
+              <div class="plan-features-title">Tier Highlights</div>
+              <ul class="plan-features-list">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>High-tier allocation: $2,500 and above</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Reported daily return: Up to 9.5% daily</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>180-Day duration cycle (renewal required afterward)</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Full spectrum quantitative routing & dedicated monitoring</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="plan-notice-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Runs on a 180-day cycle and requires renewal afterward.</span>
+              </div>
+
+              <a href="https://vyrobot.io?ref=C8C858AF" target="_blank" rel="noopener noreferrer" class="btn btn-secondary cta-celebrate" style="width: 100%;">
+                <span>Invest in Ultra Plan</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 180-Day Rule Summary Banner -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          <div style="background-color: rgba(6, 17, 44, 0.7); border: 1px solid rgba(0, 240, 255, 0.3); border-radius: var(--radius-lg); padding: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-accent)" stroke-width="2" style="flex-shrink: 0;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <div>
+              <div style="font-size: 0.95rem; font-weight: 700; color: #ffffff; margin-bottom: 0.25rem;">180-Day Cycle Rule</div>
+              <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.6;">
+                All investment packages run on a standard <strong>180-day duration cycle</strong>. Once 180 days elapse, a renewal is required to continue automated trading allocations.
+              </p>
+            </div>
+          </div>
+
+          <div style="background-color: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.35); border-radius: var(--radius-lg); padding: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" style="flex-shrink: 0;"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <div>
+              <div style="font-size: 0.95rem; font-weight: 700; color: #fbbf24; margin-bottom: 0.25rem;">Capital Risk Notice</div>
+              <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.6;">
+                Trading returns are subject to market volatility and risk of capital loss. Always verify current live terms directly on the official platform portal.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. INTERACTIVE INVESTMENT CALCULATOR
+         ========================================================================== -->
+    <section class="section" id="calculator">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line></svg>
+            <span>Interactive Simulator</span>
+          </div>
+          <h2 class="section-title">Algorithmic <span class="text-gradient">Return Simulator</span></h2>
+          <p class="section-desc">
+            Simulate potential outcomes across Starter (5%–7%), Growth (7%–8%), and Ultra (Up to 9.5%) tiers for the standard 180-day investment cycle.
+          </p>
+        </div>
+
+        <div class="calc-grid">
+          
+          <!-- INPUT CONTROLS -->
+          <div class="calc-input-panel">
+            
+            <!-- Top Controls Header -->
+            <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 1rem; border-bottom: 1px solid rgba(30, 41, 59, 0.8); margin-bottom: 1.5rem;">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 0.875rem; font-weight: 700; color: #ffffff;">Simulation Parameters</span>
+                <span id="calcTierBadge" class="badge" style="margin: 0;">Growth Plan (7%–8%)</span>
+              </div>
+              <button type="button" id="calcResetBtn" class="btn btn-secondary btn-sm">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+                <span>Reset</span>
+              </button>
+            </div>
+
+            <!-- Field 1: Amount -->
+            <div class="calc-field-group">
+              <div class="calc-field-header">
+                <label class="calc-field-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-accent)" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                  <span>Deposit Amount ($)</span>
+                </label>
+                <div class="calc-field-value" id="calcAmountDisplay">$250</div>
+              </div>
+              <input type="range" id="calcAmount" min="25" max="10000" step="25" value="250" />
+              <div class="quick-pills">
+                <button type="button" class="quick-pill" data-amt="25">$25 (Starter)</button>
+                <button type="button" class="quick-pill" data-amt="100">$100 (Starter)</button>
+                <button type="button" class="quick-pill" data-amt="200">$200 (Growth)</button>
+                <button type="button" class="quick-pill active" data-amt="250">$250 (Growth)</button>
+                <button type="button" class="quick-pill" data-amt="500">$500 (Growth)</button>
+                <button type="button" class="quick-pill" data-amt="1000">$1,000 (Growth)</button>
+                <button type="button" class="quick-pill" data-amt="2500">$2,500 (Ultra)</button>
+                <button type="button" class="quick-pill" data-amt="5000">$5,000 (Ultra)</button>
+              </div>
+            </div>
+
+            <!-- Field 2: Daily Rate -->
+            <div class="calc-field-group">
+              <div class="calc-field-header">
+                <div>
+                  <label class="calc-field-label">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-accent)" stroke-width="2"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg>
+                    <span>Daily Return Rate (%)</span>
+                  </label>
+                  <div style="font-size: 0.7rem; color: var(--text-muted);" id="calcRateRec">Recommended for Growth Plan: 7% to 8% daily</div>
+                </div>
+                <div class="calc-field-value" id="calcRateDisplay">7.0% / day</div>
+              </div>
+              <input type="range" id="calcRate" min="1.0" max="12.0" step="0.1" value="7.0" />
+              <div class="quick-pills">
+                <button type="button" class="quick-pill" data-rate="5.0">5.0%</button>
+                <button type="button" class="quick-pill" data-rate="6.0">6.0% (Starter)</button>
+                <button type="button" class="quick-pill active" data-rate="7.0">7.0% (Growth)</button>
+                <button type="button" class="quick-pill" data-rate="8.0">8.0% (Growth)</button>
+                <button type="button" class="quick-pill" data-rate="9.5">9.5% (Ultra Max)</button>
+              </div>
+            </div>
+
+            <!-- Field 3: Duration Days -->
+            <div class="calc-field-group">
+              <div class="calc-field-header">
+                <div>
+                  <label class="calc-field-label">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-accent)" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    <span>Duration Horizon (Days)</span>
+                  </label>
+                  <div style="font-size: 0.7rem; color: var(--cyan-accent); font-family: var(--font-mono);">Standard VyRobot Cycle: 180 Days (Renewal required afterward)</div>
+                </div>
+                <div class="calc-field-value" id="calcDaysDisplay">180 Days</div>
+              </div>
+              <input type="range" id="calcDays" min="7" max="180" step="1" value="180" />
+              <div class="quick-pills">
+                <button type="button" class="quick-pill" data-days="7">7 Days</button>
+                <button type="button" class="quick-pill" data-days="30">30 Days</button>
+                <button type="button" class="quick-pill" data-days="60">60 Days</button>
+                <button type="button" class="quick-pill" data-days="90">90 Days</button>
+                <button type="button" class="quick-pill active" data-days="180">★ 180 Days (Full Cycle)</button>
+              </div>
+            </div>
+
+            <!-- Compounding Checkbox Switch -->
+            <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem;">
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <input type="checkbox" id="calcCompound" style="width: 18px; height: 18px; accent-color: var(--cyan-accent); cursor: pointer;" />
+                <label for="calcCompound" style="font-size: 0.8125rem; font-weight: 600; color: #ffffff; cursor: pointer;">
+                  Simulate Daily Compounding Reinvestment
+                </label>
+              </div>
+              <span style="font-size: 0.75rem; color: var(--text-dim); font-family: var(--font-mono);">Exponential Mode</span>
+            </div>
+
+          </div>
+
+          <!-- SIMULATION OUTPUTS -->
+          <div class="calc-output-panel">
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 1rem; border-bottom: 1px solid rgba(59, 130, 246, 0.3); margin-bottom: 1.5rem;">
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; color: var(--cyan-accent); text-transform: uppercase;">
+                  Simulation Outputs
+                </span>
+                <span id="calcModeBadge" style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); background: rgba(2, 5, 15, 0.8); padding: 0.2rem 0.5rem; border-radius: var(--radius-sm); border: 1px solid rgba(59, 130, 246, 0.2);">
+                  Linear Growth Simulation
+                </span>
+              </div>
+
+              <!-- Output 1: Daily -->
+              <div class="calc-output-box">
+                <div class="calc-output-label">ESTIMATED DAILY RETURN</div>
+                <div class="calc-output-val" id="outDailyVal">$17.50</div>
+              </div>
+
+              <!-- Output 2: Cumulative -->
+              <div class="calc-output-box">
+                <div class="calc-output-label">ESTIMATED CUMULATIVE RETURN (HORIZON)</div>
+                <div class="calc-output-val cyan" id="outCumulativeVal">+$3,150.00</div>
+              </div>
+
+              <!-- Output 3: Total Capital -->
+              <div class="calc-output-box" style="background: linear-gradient(135deg, rgba(8, 23, 61, 0.9) 0%, rgba(2, 5, 15, 0.9) 100%); border-color: var(--border-cyan);">
+                <div class="calc-output-label" style="color: var(--cyan-accent);">ESTIMATED TOTAL CAPITAL AT CYCLE END</div>
+                <div class="calc-output-val" style="font-size: 2.25rem;" id="outTotalVal">$3,400.00</div>
+                <div style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-dim); margin-top: 0.3rem;">
+                  180-Day Cycle • Requires renewal afterward
+                </div>
+              </div>
+
+              <!-- Mini Trajectory Curve -->
+              <div style="background-color: rgba(2, 5, 15, 0.7); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: var(--radius-md); padding: 0.85rem; margin-bottom: 1.5rem;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-dim); margin-bottom: 0.4rem;">
+                  <span>Growth Trajectory</span>
+                  <span id="outTotalGraph" style="color: var(--cyan-accent); font-weight: 700;">$3,400</span>
+                </div>
+                <div style="height: 48px; width: 100%;">
+                  <svg viewBox="0 0 200 40" preserveAspectRatio="none" style="width: 100%; height: 100%; overflow: visible;">
+                    <defs>
+                      <linearGradient id="calcGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.4"></stop>
+                        <stop offset="100%" stop-color="#0052ff" stop-opacity="0"></stop>
+                      </linearGradient>
+                    </defs>
+                    <path id="calcGraphArea" fill="url(#calcGrad)" d="M 0,40 L 0,35 L 200,5 L 200,40 Z"></path>
+                    <path id="calcSvgPath" fill="none" stroke="#00f0ff" stroke-width="2.5" d="M 0,35 L 200,5"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Button -->
+            <div>
+              <a href="https://vyrobot.io?ref=C8C858AF" target="_blank" rel="noopener noreferrer" class="btn btn-primary cta-celebrate" style="width: 100%;">
+                <span id="calcCtaBtnText">Start with Growth Plan</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+              <div style="text-align: center; font-size: 0.6875rem; color: var(--text-dim); margin-top: 0.5rem; font-family: var(--font-mono);">
+                Illustrative simulation based on reported parameters.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. FEATURES (WHY EXPLORE VYROBOT)
+         ========================================================================== -->
+    <section class="section" id="features">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>Core Capabilities</span>
+          </div>
+          <h2 class="section-title">Why Explore <span class="text-gradient">VyRobot</span></h2>
+          <p class="section-desc">
+            Engineered with institutional algorithmic design principles, low-latency execution, and simplified retail access.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          
+          <div class="feature-card">
+            <div>
+              <div class="feature-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <h3 class="feature-title">24/7 Automated Execution</h3>
+              <p class="feature-desc">
+                Continuous market scanning removes emotion, timing fatigue, and manual delay from prediction market trading.
+              </p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan-accent); margin-top: 1.25rem;">Continuous Execution</div>
+          </div>
+
+          <div class="feature-card">
+            <div>
+              <div class="feature-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <h3 class="feature-title">Quantitative Delta Scanning</h3>
+              <p class="feature-desc">
+                Proprietary probability modeling finds pricing imbalances between expected outcomes and live prediction book odds.
+              </p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan-accent); margin-top: 1.25rem;">Statistical Advantage</div>
+          </div>
+
+          <div class="feature-card">
+            <div>
+              <div class="feature-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <h3 class="feature-title">Real-Time Risk Controls</h3>
+              <p class="feature-desc">
+                Pre-trade VaR scoring, max drawdown limits, and multi-asset position caps protect capital from extreme tail risk.
+              </p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan-accent); margin-top: 1.25rem;">Capital Preservation</div>
+          </div>
+
+          <div class="feature-card">
+            <div>
+              <div class="feature-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h3 class="feature-title">Intuitive Live Dashboard</h3>
+              <p class="feature-desc">
+                Monitor real-time trades, daily yield settlements, cumulative performance metrics, and 180-day cycle statuses.
+              </p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan-accent); margin-top: 1.25rem;">Full Transparency</div>
+          </div>
+
+          <div class="feature-card">
+            <div>
+              <div class="feature-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
+              <h3 class="feature-title">Micro-Deposit Accessibility</h3>
+              <p class="feature-desc">
+                Start evaluating algorithmic capabilities from as low as $25 with transparent daily rate tiers.
+              </p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan-accent); margin-top: 1.25rem;">Starter Friendly</div>
+          </div>
+
+          <div class="feature-card">
+            <div>
+              <div class="feature-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+              </div>
+              <h3 class="feature-title">Affiliate & Partner Network</h3>
+              <p class="feature-desc">
+                Earn platform referral rewards and community bonuses using your unique affiliate ID <strong>C8C858AF</strong>.
+              </p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan-accent); margin-top: 1.25rem;">Referral Program</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. TECHNOLOGY PIPELINE
+         ========================================================================== -->
+    <section class="section" id="technology">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge badge-indigo">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            <span>Quant Architecture</span>
+          </div>
+          <h2 class="section-title">Algorithmic <span class="text-gradient">Pipeline</span></h2>
+          <p class="section-desc">
+            Click on each node below to inspect how VyRobot ingests data, scores delta probability, and executes trades across markets.
+          </p>
+        </div>
+
+        <div class="tech-grid">
+          
+          <!-- Pipeline Step Buttons -->
+          <div id="techButtonsContainer">
+            <!-- Populated dynamically by main.js -->
+          </div>
+
+          <!-- Dynamic Inspector Card -->
+          <div class="tech-inspector-card" id="techInspector">
+            <!-- Populated dynamically by main.js -->
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. SIMULATED DASHBOARD PREVIEW
+         ========================================================================== -->
+    <section class="section" id="dashboard">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+            <span>Platform Interface</span>
+          </div>
+          <h2 class="section-title">Interactive <span class="text-gradient">Dashboard Preview</span></h2>
+          <p class="section-desc">
+            Get a preview of the clean, real-time analytics interface traders use to monitor their VyRobot positions.
+          </p>
+        </div>
+
+        <div class="dashboard-container">
+          
+          <!-- Top Dashboard Bar -->
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding-bottom: 1.25rem; border-bottom: 1px solid rgba(59, 130, 246, 0.25);">
+            <div>
+              <div style="font-size: 1.125rem; font-weight: 800; color: #ffffff;">Portfolio Overview (Demo)</div>
+              <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">
+                Active Tier: <span style="color: var(--cyan-accent); font-weight: 700;">Growth Plan ($200–$2,499)</span> • Cycle: Day 42 of 180
+              </div>
+            </div>
+
+            <!-- Timeframe Filter -->
+            <div style="display: flex; gap: 0.35rem; background-color: rgba(2, 5, 15, 0.8); padding: 0.3rem; border-radius: var(--radius-md); border: 1px solid rgba(59, 130, 246, 0.2);">
+              <button type="button" class="dash-time-btn quick-pill active" data-tf="24H">24H</button>
+              <button type="button" class="dash-time-btn quick-pill" data-tf="7D">7D</button>
+              <button type="button" class="dash-time-btn quick-pill" data-tf="30D">30D</button>
+              <button type="button" class="dash-time-btn quick-pill" data-tf="ALL">ALL</button>
+            </div>
+          </div>
+
+          <!-- 4 Dashboard Metric Cards -->
+          <div class="dash-metrics-grid">
+            <div class="dash-metric-card">
+              <div style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-dim);">TOTAL ALLOCATED CAPITAL</div>
+              <div style="font-size: 1.5rem; font-family: var(--font-mono); font-weight: 800; color: #ffffff; margin-top: 0.25rem;">$2,000.00</div>
+              <div style="font-size: 0.7rem; color: var(--cyan-accent); margin-top: 0.25rem;">180-Day Duration Cycle</div>
+            </div>
+
+            <div class="dash-metric-card">
+              <div style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-dim);">ESTIMATED REALIZED PROFIT</div>
+              <div style="font-size: 1.5rem; font-family: var(--font-mono); font-weight: 800; color: #34d399; margin-top: 0.25rem;" id="dashProfitVal">+$142.50</div>
+              <div style="font-size: 0.7rem; color: #34d399; margin-top: 0.25rem;">Daily PnL: +7.1%</div>
+            </div>
+
+            <div class="dash-metric-card">
+              <div style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-dim);">ALGORITHMIC WIN RATE</div>
+              <div style="font-size: 1.5rem; font-family: var(--font-mono); font-weight: 800; color: var(--cyan-accent); margin-top: 0.25rem;">89.4%</div>
+              <div style="font-size: 0.7rem; color: var(--text-muted); margin-top: 0.25rem;">Based on 1,420 trades</div>
+            </div>
+
+            <div class="dash-metric-card">
+              <div style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-dim);">TIMEFRAME ROI</div>
+              <div style="font-size: 1.5rem; font-family: var(--font-mono); font-weight: 800; color: #60a5fa; margin-top: 0.25rem;" id="dashRoiVal">+7.1%</div>
+              <div style="font-size: 0.7rem; color: var(--text-muted); margin-top: 0.25rem;">Performance multiplier</div>
+            </div>
+          </div>
+
+          <!-- Bottom Action Buttons in Demo -->
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: flex-end; padding-top: 1rem; border-top: 1px solid rgba(59, 130, 246, 0.2);">
+            <button type="button" id="btnOpenDeposit" class="btn btn-primary btn-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>Deposit Simulation</span>
+            </button>
+            <button type="button" id="btnOpenWithdraw" class="btn btn-secondary btn-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              <span>Withdraw Simulation</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         11. FREQUENTLY ASKED QUESTIONS
+         ========================================================================== -->
+    <section class="section" id="faq">
+      <div class="container-narrow">
+        
+        <div class="section-header">
+          <div class="badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <span>Platform Knowledge</span>
+          </div>
+          <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+          <p class="section-desc">
+            Clear answers regarding VyRobot plans, the 180-day cycle rule, risk factors, and platform features.
+          </p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="faq-search-box">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-dim)" stroke-width="2" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%);"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="faqSearch" class="faq-input" placeholder="Search questions (e.g. 180 days, minimum deposit, plans)..." />
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 2rem;">
+          <button type="button" class="faq-cat-pill quick-pill active" data-cat="all">All Topics</button>
+          <button type="button" class="faq-cat-pill quick-pill" data-cat="basics">Platform Basics</button>
+          <button type="button" class="faq-cat-pill quick-pill" data-cat="plans">180-Day Plans</button>
+          <button type="button" class="faq-cat-pill quick-pill" data-cat="tech">Trading & Tech</button>
+          <button type="button" class="faq-cat-pill quick-pill" data-cat="safety">Risk & Safety</button>
+        </div>
+
+        <!-- Accordion Items -->
+        <div id="faqAccordion">
+          
+          <div class="faq-accordion-item open" data-cat="plans">
+            <button type="button" class="faq-btn">
+              <span class="faq-q-text">What are the available VyRobot investment tiers and daily return rates?</span>
+              <div class="faq-icon-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="faq-content">
+              VyRobot provides three primary automated tiers:
+              <br /><br />
+              • <strong>Starter Plan ($25 to $199)</strong>: Reported around 5% to 7% daily return.
+              <br />
+              • <strong>Growth Plan ($200 to $2,499)</strong>: Reported around 7% to 8% daily return.
+              <br />
+              • <strong>Ultra Plan ($2,500 and above)</strong>: Reported up to 9.5% daily return.
+              <br /><br />
+              All plans run on a 180-day cycle and require renewal afterward to continue participation.
+            </div>
+          </div>
+
+          <div class="faq-accordion-item" data-cat="plans">
+            <button type="button" class="faq-btn">
+              <span class="faq-q-text">What is the 180-day cycle rule and why is renewal required?</span>
+              <div class="faq-icon-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="faq-content">
+              Every investment plan on VyRobot operates on a structured 180-day duration cycle. Upon completion of the 180-day period, the plan expires and requires renewal if you wish to continue receiving daily algorithmic trading allocations.
+            </div>
+          </div>
+
+          <div class="faq-accordion-item" data-cat="basics">
+            <button type="button" class="faq-btn">
+              <span class="faq-q-text">What is VyRobot and how does it work?</span>
+              <div class="faq-icon-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="faq-content">
+              VyRobot is an automated trading platform that leverages quantitative prediction-market algorithms to identify mispriced binary event outcomes, probability spreads, and multi-venue digital asset arbitrage opportunities 24/7.
+            </div>
+          </div>
+
+          <div class="faq-accordion-item" data-cat="basics">
+            <button type="button" class="faq-btn">
+              <span class="faq-q-text">What is the official referral code to register?</span>
+              <div class="faq-icon-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="faq-content">
+              The official platform registration referral code is <strong>C8C858AF</strong> (Direct link: <a href="https://vyrobot.io?ref=C8C858AF" target="_blank" style="color: var(--cyan-accent); text-decoration: underline;">https://vyrobot.io?ref=C8C858AF</a>).
+            </div>
+          </div>
+
+          <div class="faq-accordion-item" data-cat="tech">
+            <button type="button" class="faq-btn">
+              <span class="faq-q-text">Do I need prior trading experience to use VyRobot?</span>
+              <div class="faq-icon-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="faq-content">
+              No. VyRobot is designed as a fully automated algorithmic solution. The platform's automated engine executes trade routing, position management, and performance calculation without requiring manual charting or order dispatch.
+            </div>
+          </div>
+
+          <div class="faq-accordion-item" data-cat="safety">
+            <button type="button" class="faq-btn">
+              <span class="faq-q-text">Are daily returns guaranteed?</span>
+              <div class="faq-icon-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="faq-content">
+              No. Cryptocurrency and prediction market trading always involve risk of capital loss. Past reported returns and simulated projections are illustrative benchmarks and are not guaranteed guarantees of future outcomes.
+            </div>
+          </div>
+
+          <div class="faq-accordion-item" data-cat="safety">
+            <button type="button" class="faq-btn">
+              <span class="faq-q-text">How do deposits and withdrawals work?</span>
+              <div class="faq-icon-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="faq-content">
+              Deposits and withdrawals are handled in supported cryptocurrencies (such as USDT, BTC, ETH) via your account backoffice on the official VyRobot website according to platform processing rules.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         12. RISK & REGULATORY DISCLAIMER
+         ========================================================================== -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        
+        <div class="risk-box">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: #fbbf24;">Important Regulatory & Risk Disclosure</h3>
+          </div>
+          <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+            Trading digital assets, automated prediction strategies, and algorithmic cryptocurrency markets involves substantial risk of loss and is not suitable for every individual. Historical performance, stated daily return ranges (Starter 5%–7%, Growth 7%–8%, Ultra up to 9.5%), and calculator simulations are illustrative and do not constitute financial or investment advice.
+          </p>
+          <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.7;">
+            Users should conduct independent due diligence, verify terms directly on the official VyRobot website, and never deposit funds they cannot afford to lose. All investment plans run on a 180-day cycle and require renewal afterward.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         13. FOOTER
+         ========================================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          
+          <!-- Col 1: Brand Info -->
+          <div>
+            <div class="nav-logo" style="margin-bottom: 1rem;">
+              <div style="width: 2.25rem; height: 2.25rem; border-radius: var(--radius-md); background: linear-gradient(135deg, #0052ff, #00f0ff); display: flex; align-items: center; justify-content: center;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <span style="font-size: 1.25rem; font-weight: 900; color: #ffffff;">Vy<span style="color: var(--cyan-accent);">Robot</span></span>
+            </div>
+            <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              Automated algorithmic prediction market trading platform operating on structured 180-day capital cycles.
+            </p>
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan-accent);">
+              Official Referral Partner: <strong>C8C858AF</strong>
+            </div>
+          </div>
+
+          <!-- Col 2: Platform -->
+          <div>
+            <div class="footer-col-title">Navigation</div>
+            <ul class="footer-links">
+              <li><a href="#features">Features</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#plans">180-Day Plans</a></li>
+              <li><a href="#calculator">Return Simulator</a></li>
+              <li><a href="#technology">Tech Architecture</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Plans -->
+          <div>
+            <div class="footer-col-title">180-Day Tiers</div>
+            <ul class="footer-links">
+              <li><a href="#plans">Starter Plan ($25–$199)</a></li>
+              <li><a href="#plans">Growth Plan ($200–$2,499)</a></li>
+              <li><a href="#plans">Ultra Plan ($2,500+)</a></li>
+              <li><a href="#plans">180-Day Renewal Policy</a></li>
+              <li><a href="#calculator">Compound Calculator</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Official Portal -->
+          <div>
+            <div class="footer-col-title">Official Access</div>
+            <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1rem;">
+              Ready to access automated prediction market trading? Join via the official partner portal.
+            </p>
+            <a href="https://vyrobot.io?ref=C8C858AF" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm cta-celebrate" style="width: 100%;">
+              <span>Launch VyRobot</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </div>
+
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 2rem; border-top: 1px solid rgba(59, 130, 246, 0.15); font-size: 0.75rem; color: var(--text-dim);">
+          <div>&copy; 2026 VyRobot Algorithmic Trading Platform. All rights reserved.</div>
+          <div style="display: flex; gap: 1.5rem;">
+            <a href="#faq" style="color: var(--text-dim);">Terms</a>
+            <a href="#faq" style="color: var(--text-dim);">Privacy</a>
+            <a href="#faq" style="color: var(--text-dim);">Disclosures</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- ==========================================================================
+         14. FLOATING CTA BAR & BACK TO TOP
+         ========================================================================== -->
+    <div class="floating-bar" id="floatingBar">
+      <button type="button" class="btn-scroll-top" id="btnScrollTop" title="Back to Top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+      </button>
+
+      <a href="https://vyrobot.io?ref=C8C858AF" target="_blank" rel="noopener noreferrer" class="btn btn-primary cta-celebrate" style="box-shadow: 0 0 25px rgba(0, 240, 255, 0.6);">
+        <span>Join VyRobot</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+      </a>
+    </div>
+
+    <!-- ==========================================================================
+         15. MODAL DIALOG (DEPOSIT / WITHDRAW SIMULATION)
+         ========================================================================== -->
+    <div class="modal-backdrop" id="modalBackdrop">
+      <div class="modal-box">
+        <div style="width: 3rem; height: 3rem; border-radius: 50%; background-color: rgba(0, 240, 255, 0.1); border: 1px solid var(--border-cyan); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto; color: var(--cyan-accent);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+        </div>
+        <h3 id="modalTitle" style="font-size: 1.25rem; font-weight: 800; color: #ffffff; margin-bottom: 0.75rem;">Deposit Info</h3>
+        <p id="modalBody" style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+          Visit the official VyRobot platform to initiate deposits or view live account balances.
+        </p>
+        <div style="display: flex; gap: 0.75rem; justify-content: center;">
+          <button type="button" id="modalClose" class="btn btn-secondary btn-sm">Close</button>
+          <a href="https://vyrobot.io?ref=C8C858AF" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm cta-celebrate">
+            <span>Proceed to VyRobot</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pure Vanilla Main JavaScript Engine -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

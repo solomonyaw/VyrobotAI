@@ -1,0 +1,6 @@
+{
+  "name": "VyRobot - AI-Powered Automated Trading",
+  "description": "Explore VyRobot, an automated trading platform focused on algorithmic trading and prediction-market opportunities. Review platform features, investment options, interactive calculator, and risk information.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
